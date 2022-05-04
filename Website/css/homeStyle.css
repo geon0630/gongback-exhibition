@@ -53,7 +53,6 @@ header .inner {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 0;
 }
@@ -111,7 +110,7 @@ header .loginTop {
     padding: 8px 20px;
     height: 45px;
     border: 1px solid #6667AB;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #6667AB;
     font-weight: 500;
     font-size: 20px;
@@ -126,7 +125,7 @@ main {
 
 .main-home {
     position: relative;
-    height: 888px;
+    height: 975px;
     background-size: cover;
 }
 
@@ -175,4 +174,56 @@ main {
     font-weight: 800;
     text-shadow: 0 0 8px rgb(0 0 0 / 20%);
     opacity: 1;
+}
+
+.main-home .inner-btn {
+    margin-top: 40px;
+    display: inline-block;
+    height: 68px;
+    line-height: 68px;
+    padding: 0 34px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    color: #6667AB;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+    opacity: 1;
+}
+
+.section .inner {
+    padding: 100px 100px;
+}
+
+.section .content-text {
+    max-width: 874px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section .content-text .content-title {
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.section .content-text .content-desc {
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.exhibit .img-box {
+    margin: 80px auto 60px;
+    max-width: 874;
+    opacity: 1;
+}
+
+.exhibit .img-box img {
+    width: 100%;
 }

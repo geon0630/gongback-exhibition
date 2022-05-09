@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "notoSans";
+    src: url("./fonts/Noto_Sans_KR/NotoSansKR-Regular.otf");
+}
+
+* {
+    font-family: "notoSans";
+    text-decoration-line: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}

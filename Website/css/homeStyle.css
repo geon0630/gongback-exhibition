@@ -1,16 +1,3 @@
-header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    min-width: 320px;
-    text-align: right;
-    top: 0;
-    height: 87px;
-    color: #6667AB;
-    background-color: #ffffff;
-    display: block;
-}
-
 h1 {
     display: block;
     font-size: 2em;
@@ -31,6 +18,53 @@ h2 {
     font-weight: bold;
 }
 
+ul, ol {
+    list-style: none;
+}
+
+.inner {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+/*---header---*/
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    min-width: 320px;
+    text-align: right;
+    top: 0;
+    height: 87px;
+    color: #6667AB;
+    background-color: #ffffff;
+    display: block;
+}
+
+header .inner {
+    height: 87px;
+    max-width: 100%;
+}
+
+header .inner:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+header .loginTop {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 70px;
+    font-size: 0;
+}
+
 .logo {
     position: absolute;
     top: 11px;
@@ -42,27 +76,6 @@ h2 {
     display: inline-block;
     width: 240px;
     height: 64px;
-}
-
-header .inner {
-    height: 87px;
-    max-width: 100%;
-}
-
-.inner {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    font-size: 0;
-}
-
-header .inner:after {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 100%;
-    vertical-align: middle;
 }
 
 .homeMenu {
@@ -97,13 +110,6 @@ header .inner:after {
     font-weight: 500;
 }
 
-header .loginTop {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 70px;
-    font-size: 0;
-}
-
 .loginTop .btn-login {
     display: inline-block;
     vertical-align: middle;
@@ -118,10 +124,14 @@ header .loginTop {
     -webkit-box-sizing: border-box;
 }
 
+/*---main---*/
+
 main {
     padding-top: 87px;
     text-align: center;
 }
+
+/*---main first view---*/
 
 .main-home {
     position: relative;
@@ -136,14 +146,6 @@ main {
     right: 0;
     bottom: 0;
     z-index: 1;
-}
-
-.inner {
-    position: relative;
-    max-width: 1920px;
-    margin: 0, auto;
-    box-sizing: border-box;
-    font-size: 0;
 }
 
 .main-home .inner {
@@ -193,8 +195,10 @@ main {
     opacity: 1;
 }
 
+/*---sections---*/
+
 .section .inner {
-    padding: 100px 100px;
+    padding: 100px 300px;
 }
 
 .section .content-text {
@@ -218,6 +222,8 @@ main {
     opacity: 1;
 }
 
+/*---exhibition section---*/
+
 .exhibit .img-box {
     margin: 80px auto 60px;
     max-width: 874;
@@ -226,4 +232,165 @@ main {
 
 .exhibit .img-box img {
     width: 100%;
+}
+
+/*---customizing section---*/
+
+.custom .img-box {
+    margin: 80px auto 60px;
+    max-width: 874;
+    opacity: 1;
+}
+
+.custom .img-box img {
+    width: 100%;
+}
+
+/*---insight section---*/
+
+.insight {
+
+}
+
+/*---features section---*/
+
+.feat {
+
+}
+
+/*---bottom section---*/
+
+.bottom {
+    position: relative;
+    height: 425px;
+    background-size: cover;
+}
+
+.bottom .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.bottom .inner {
+    height: 100%;
+}
+
+.bottom .inner:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.bottom .content-text {
+    position: relative;
+    display: inline-block;
+    max-width: 1920px;
+    vertical-align: middle;
+    padding: 0 40px;
+    color: #ffffff;
+    z-index: 15;
+}
+
+.bottom .inner-btn {
+    display: inline-block;
+    height: 100px;
+    line-height: 90px;
+    padding: 0 98px;
+    border-radius: 20px;
+    background-color: #6667AB;
+    font-weight: 700;
+    font-size: 48px;
+    color: #ffffff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+    opacity: 1;
+}
+
+/*---footer---*/
+
+footer {
+    background-color: #6667AB;
+}
+
+footer .inner{
+    overflow: visible;
+    padding: 35px 50px 70px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/*---links---*/
+
+footer .ft-link {
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    font-size: 0;
+}
+
+footer .ft-link li {
+    display: inline-block;
+}
+
+footer .ft-link li+li {
+    margin-left: 12px;
+}
+
+footer .ft-link li .icon-notion {
+    display: inline-block;
+    background-image: url(./icons/link_icon_notion.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+}
+
+footer .ft-link li .icon-github {
+    display: inline-block;
+    background-image: url(./icons/link_icon_github.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+}
+
+/*---navigation bar---*/
+
+footer .ft-nav li {
+    display: inline-block;
+}
+
+footer .ft-nav li~li:before {
+    content: '';
+    display: inline-block;
+    margin: 0 12px;
+    width: 1px;
+    height: 8px;
+    background-color: #e9e9ef;
+}
+
+footer .ft-nav li a{
+    font-weight: 400;
+    font-size: 12px;
+    color: #f1f1f2;
+    line-height: 18px;
+}
+
+/*---copyeights---*/
+
+footer .copy {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #d3d3f3;
 }

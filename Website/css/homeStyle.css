@@ -43,6 +43,10 @@ header {
     color: #6667AB;
     background-color: #ffffff;
     display: block;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 header .inner {
@@ -65,6 +69,15 @@ header .loginTop {
     font-size: 0;
 }
 
+.header-scrolled {
+    color: #ffffff;
+    background-color: #6667AB;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
 .logo {
     position: absolute;
     top: 11px;
@@ -76,6 +89,20 @@ header .loginTop {
     display: inline-block;
     width: 240px;
     height: 64px;
+}
+
+.logo .global-banner {
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+header .logo .logo-scrolled {
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .homeMenu {
@@ -113,6 +140,18 @@ header .loginTop {
     color: #6667AB;
     font-weight: 600;
     text-shadow: 0 0 2px 0 rgb(0 0 0 / 5%);
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+header .gnb .gnb-scrolled {
+    color: #ffffff;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .loginTop .btn-login {
@@ -124,15 +163,30 @@ header .loginTop {
     border: 1px solid #6667AB;
     border-radius: 10px;
     background: #6667AB;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     color: #ffffff;
     -webkit-box-sizing: border-box;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+header .loginTop .btn-scrolled {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #6667AB;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 /*---main---*/
 
 main {
+    position: relative;
     padding-top: 87px;
     text-align: center;
 }
@@ -359,6 +413,34 @@ main {
     line-height: 32px;
 }
 
+/*---top button---*/
+
+.goTop {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 110px;
+    height: 110px;
+    right: 50px;
+}
+
+.goTop a {
+    cursor: default;
+}
+
+main .top-scrolled {
+    display: block;
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
 /*---bottom section---*/
 
 .bottom {
@@ -493,4 +575,84 @@ footer .copy {
     font-size: 12px;
     line-height: 18px;
     color: #d3d3f3;
+}
+
+/*---animation---*/
+
+@-webkit-keyframes fadeInUp{
+    from{
+        opacity:0;
+        -webkit-transform:translate3d(0, 50px, 0);
+        -webkit-transform:translate3d(0, 50px, 0);
+        -moz-transform:translate3d(0, 50px, 0);
+        -ms-transform:translate3d(0, 50px, 0);
+        transform:translate3d(0, 50px, 0);
+    }
+    to{
+        opacity:1;
+        -webkit-transform:translate3d(0, 0, 0);
+        -webkit-transform:translate3d(0, 0, 0);
+        -moz-transform:translate3d(0, 0, 0);
+        -ms-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        -webkit-transform:translate3d(0, 50px, 0);
+        -webkit-transform:translate3d(0, 50px, 0);
+        -moz-transform:translate3d(0, 50px, 0);
+        -ms-transform:translate3d(0, 50px, 0);
+        transform:translate3d(0, 50px, 0);
+    }
+    to{
+        opacity:1;
+        -webkit-transform:translate3d(0, 0, 0);
+        -webkit-transform:translate3d(0, 0, 0);
+        -moz-transform:translate3d(0, 0, 0);
+        -ms-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeOutDown{
+    from{
+        opacity:1;
+        -webkit-transform:translate3d(0, 0, 0);
+        -webkit-transform:translate3d(0, 0, 0);
+        -moz-transform:translate3d(0, 0, 0);
+        -ms-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0);
+    }
+    to{
+        opacity:0;
+        -webkit-transform:translate3d(0, 50px, 0);
+        -webkit-transform:translate3d(0, 50px, 0);
+        -moz-transform:translate3d(0, 50px, 0);
+        -ms-transform:translate3d(0, 50px, 0);
+        transform:translate3d(0, 50px, 0);
+        
+    }
+}
+
+@keyframes fadeOutDown{
+    from{
+        opacity:1;
+        -webkit-transform:translate3d(0, 0, 0);
+        -webkit-transform:translate3d(0, 0, 0);
+        -moz-transform:translate3d(0, 0, 0);
+        -ms-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0);
+    }
+    to{
+        opacity:0;
+        -webkit-transform:translate3d(0, 50px, 0);
+        -webkit-transform:translate3d(0, 50px, 0);
+        -moz-transform:translate3d(0, 50px, 0);
+        -ms-transform:translate3d(0, 50px, 0);
+        transform:translate3d(0, 50px, 0);
+        
+    }
 }

@@ -6,7 +6,6 @@
 * {
     font-family: "notoSans";
     text-decoration-line: none;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -19,4 +18,38 @@ img {
     width: 100%;
     height: 100%;
     vertical-align: top;
+}
+
+.slide-In {
+    -webkit-animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-name: slideUp;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.slide-Out {
+    -webkit-animation-name: slideDown;
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes slideUp {
+    from {}
+    to{}
+}
+
+@keyframes slideDown {
+    from {}
+    to {}
 }

@@ -1,0 +1,11 @@
+.character-img {
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+}
+
+.clothes-img{
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+}
